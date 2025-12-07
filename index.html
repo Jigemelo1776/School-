@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>IMS - Results (Firebase)</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header><h1>IMS - School Results (Firebase)</h1></header>
+<main class="container">
+  <div id="authPanel" class="card">
+    <h2>Login / Register</h2>
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+    <div class="row">
+      <button id="loginBtn">Login</button>
+      <button id="registerBtn">Register</button>
+    </div>
+    <div class="small muted">Use teacher accounts. Admin can be created in Firebase console.</div>
+  </div>
+
+  <div id="appPanel" class="hidden">
+    <div class="topbar">
+      <div id="welcome"></div>
+      <div>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <aside class="card sidebar">
+        <h3>Navigation</h3>
+        <button id="navDashboard" class="navBtn">Dashboard</button>
+        <button id="navStudents" class="navBtn">Students</button>
+        <button id="navResults" class="navBtn">Enter Results</button>
+        <button id="navReports" class="navBtn">Reports</button>
+      </aside>
+
+      <section id="mainArea" class="card">
+        <!-- dynamic content -->
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>Static site + Firebase • No PHP/XAMPP needed</footer>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+<!-- User must fill config in firebase-config.js -->
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+
+<script type="module" src="firebase.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
