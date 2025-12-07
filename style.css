@@ -1,0 +1,19 @@
+/* Simple clean UI */
+:root{--bg:#f4f7fb;--card:#ffffff;--accent:#2563eb;--muted:#64748b}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:#0f172a}
+header{background:linear-gradient(90deg,#2563eb,#60a5fa);color:white;padding:18px 20px}
+header h1{margin:0;font-size:18px}
+.container{max-width:1100px;margin:20px auto;padding:0 12px}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,30,0.06);margin-bottom:12px}
+.hidden{display:none}
+input,select,textarea{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6eef8}
+button{background:var(--accent);color:white;border:none;padding:10px 12px;border-radius:8px;cursor:pointer}
+.row{display:flex;gap:8px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:260px 1fr;gap:12px}
+.sidebar button{display:block;width:100%;text-align:left;margin-bottom:8px;background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12);padding:8px;border-radius:8px}
+.small{font-size:13px;color:var(--muted)}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:8px;border-bottom:1px solid #f1f5f9;text-align:left}
+.footer{margin-top:20px;text-align:center;color:var(--muted)}
